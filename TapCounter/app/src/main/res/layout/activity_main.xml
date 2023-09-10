@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2E2E2E"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/countText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:fontFamily="@font/quantico"
+        android:text="@string/count_0"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toTopOf="@+id/line"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/targetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="11dp"
+        android:backgroundTint="@color/white"
+        android:clickable="true"
+        android:contentDescription="@string/set_target"
+        android:focusable="true"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toBottomOf="@+id/line"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/target" />
+
+    <ImageView
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="3dp"
+        app:layout_constraintTop_toBottomOf="@id/targetButton"
+        app:srcCompat="@drawable/line"
+        android:contentDescription="@string/target_image" />
+
+    <TextView
+        android:id="@+id/tapSpace"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#2E2E2E"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line" />
+
+    <!--
+    <ImageView
+        android:id="@+id/reduceCount"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:background="@drawable/minusimg"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:contentDescription="@string/pause_image" />
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:text="@string/minus"
+        android:fontFamily="@font/quantico"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="@+id/reduceCount"
+        app:layout_constraintEnd_toEndOf="@id/reduceCount"
+        app:layout_constraintStart_toStartOf="@+id/reduceCount"
+        app:layout_constraintTop_toTopOf="@+id/reduceCount"/>
+        -->
+
+    <ImageView
+        android:id="@+id/pauseImg"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/ic_baseline_pause_24"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line"
+        android:contentDescription="@string/pause_image" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="-15dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="#A8A8A8"
+            android:fontFamily="@font/quantico"
+            android:padding="15dp"
+            android:text="@string/reset_count"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:cornerRadius="5dp"
+            style="?android:attr/buttonBarButtonStyle" />
+
+        <Button
+            android:id="@+id/pause"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="#A8A8A8"
+            android:fontFamily="@font/quantico"
+            android:padding="15dp"
+            android:text="@string/pause"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:cornerRadius="5dp"/>
+
+    </LinearLayout>
+
+    <!---
+    <TextView
+        android:id="@+id/copyright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:fontFamily="@font/quantico"
+        android:paddingLeft="4sp"
+        android:paddingRight="4sp"
+        android:text="@string/copyright_nightxstudio"
+        android:textColor="@color/white"
+        android:textSize="7sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SmallSp" />
+        -->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

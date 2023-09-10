@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Tap Counter</string>
+    <string name="count_0">Count: 0</string>
+    <string name="set_target">Set Target</string>
+    <string name="reset_count">Reset Count</string>
+    <string name="pause">Pause</string>
+    <string name="pause_image">Pause Image</string>
+    <string name="target_image">Target Image</string>
+    <string name="copyright_nightxstudio">©~NightXStudio Productions</string>
+    <string name="copyright_nightxstudio_about_section">©~NightXStudio Productions ~ Sai Pritam Panda</string>
+
+    <string name="about_section">About Section</string>
+    <string name="aboutText1">Count each time you tap on screen! \nOur app helps you to know the number of times you have touched the screen with Sensor Techniques like Motion Sensors, Environment Sensors, Position Sensors (primarily) which helps in your Educational as well as Exercise field.</string>
+    <string name="aboutText2">NightXStudio was founded by Sai Pritam Panda in 2022 and currently produces applications for only AndroidOS.</string>
+    <string name="aboutText3">Production Contact Details:</string>
+    <string name="aboutText8">• E-Mail: nightxstudio15@gmail.com</string>
+    <string name="aboutText4">Feel absolute free to give feedback or any suggestions for thr improvement of the app for better benefits</string>
+    <string name="aboutText5">Founder Contact Details:</string>
+    <string name="aboutText6">(Sai Pritam Panda)</string>
+    <string name="instagram">Instagram</string>
+    <string name="twitter">Twitter</string>
+    <string name="aboutText7">THANK YOU ALL FOR YOUR SUPPORT!</string>
+    <string name="about">About</string>
+    <string name="tap_counter">Tap Counter</string>
+    <string name="loading">Loading…</string>
+    <string name="since_2022">Since 2022 /></string>
+    <string name="your_every_tap_counts">Your Every Tap Counts</string>
+    <string name="developed_by_nightxstudio_productions"><![CDATA[< Developed By NightXStudio Productions]]></string>
+    <string name="title_activity_timer">TimerActivity</string>
+
+    <string name="timer_mode">Timer Mode</string>
+    <string name="set_time">Set Time</string>
+    <string name="_00_00_00">00:00:00</string>
+    <string name="pause_feature_is_not_available_in_timer_mode">*Pause feature is not available in Timer Mode</string>
+    <string name="tapcounter_year">©TapCounter_Year</string>
+    <string name="minus"><b>-</b></string>
+    <string name="line">line</string>
+    <string name="aboutText9">If you are facing any kind of issue related to font style and size then this might be due to your device font size setting. Please change it first then it will work smoothly.</string>
+    <string name="note">*NOTE:</string>
+
+</resources>
